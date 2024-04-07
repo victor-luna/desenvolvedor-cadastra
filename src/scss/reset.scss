@@ -201,3 +201,33 @@ input[type="checkbox"] {
   margin-right: 10px;
   cursor: pointer;
 }
+
+.toastify {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: #000 !important;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 9999;
+  font-size: 14px;
+  max-width: 176px;
+
+  @media only screen and (max-width: 1030px) {
+    padding: 6px 10px !important;
+    font-size: 12px !important;
+    max-width: 300px !important;
+  }
+}
+
+.toast-close {
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
