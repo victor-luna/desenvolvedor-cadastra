@@ -1,5 +1,4 @@
 const path = require("path");
-
 const { series, src, dest, parallel, watch } = require("gulp");
 const webpack = require("webpack");
 const del = require("del");
@@ -17,6 +16,7 @@ const paths = {
   },
   styles: {
     src: "src/scss/main.scss",
+    watch: "src/scss/**/*.scss",
   },
   img: {
     src: "src/img/**/*",
@@ -87,12 +87,13 @@ function img() {
 }
 
 const build = series(clean, parallel(styles, scripts, html, img));
+
 const dev = () => {
   watch(paths.scripts.watch, { ignoreInitial: false }, scripts).on(
     "change",
     browserSync.reload
   );
-  watch(paths.styles.src, { ignoreInitial: false }, styles);
+  watch(paths.styles.watch, { ignoreInitial: false }, styles);
   watch(paths.img.src, { ignoreInitial: false }, img);
   watch(paths.html.src, { ignoreInitial: false }, html).on(
     "change",

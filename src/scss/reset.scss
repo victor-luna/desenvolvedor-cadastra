@@ -127,3 +127,77 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+h1,
+h2 {
+  font-family: "Loreal Pro", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 95%;
+  height: 100%;
+  overflow-x: hidden;
+
+  @media only screen and (min-width: 1030px) {
+    font-size: 105%;
+  }
+}
+
+a,
+a:visited,
+a:focus {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body > * {
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: "Open Sans", Verdana, Arial, Helvetica, sans-serif;
+  color: #000;
+  background-color: #ffffff;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #dfdedf #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 13px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #dfdedf;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+
+.container {
+  max-width: 1177px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media only screen and (max-width: 1030px) {
+    width: 90%;
+  }
+}
+
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}

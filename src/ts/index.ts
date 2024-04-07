@@ -1,9 +1,7 @@
-import { Product } from "./Product";
-
-const serverUrl = "http://localhost:5000";
+import { categoryPage } from "./categoryPage";
 
 function main() {
-  console.log(serverUrl);
+  categoryPage.init();
 }
 
 document.addEventListener("DOMContentLoaded", main);

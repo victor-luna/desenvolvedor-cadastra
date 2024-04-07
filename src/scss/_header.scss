@@ -1,0 +1,21 @@
+.header {
+  border-bottom: 2px solid #c7c7c7;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    background-color: #fff;
+
+    img {
+      display: block;
+      width: auto;
+      max-width: 100%;
+    }
+
+    @media only screen and (max-width: 1030px) {
+      height: 100px;
+    }
+  }
+}

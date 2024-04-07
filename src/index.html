@@ -1,19 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desenvolvedor Cadastra</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__box container">
+        <a href="/">
+          <img src="img/logo-cadastra.png" alt="Logo Cadastra" />
+        </a>
+        <img src="img/cart.png" alt="Carrinho" />
+      </div>
+    </header>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desenvolvedor Cadastra</title>
-  <link rel="stylesheet" href="main.css" />
-</head>
+    <main class="container">
+      <section class="galleryTitle">
+        <h1>Blusas</h1>
+        <div class="galleryTitle__orderBy">
+          <select class="galleryTitle__orderBy__orderBySelect">
+            <option value="" disabled selected hidden>Ordenar por:</option>
+            <option value="recentes">Mais recentes</option>
+            <option value="menorPreco">Menor preço</option>
+            <option value="maiorPreco">Maior preço</option>
+          </select>
+        </div>
+      </section>
 
-<body>
+      <section class="categoryPage">
+        <div class="categoryPage__leftColumn">
+          <div class="categoryPage__leftColumn__colors">
+            <h2>Cores</h2>
+            <div class="categoryPage__leftColumn__colors__box">
+              <!-- Aqui será feito o fetch das cores -->
+            </div>
+          </div>
+          <div class="categoryPage__leftColumn__sizes">
+            <h2>Tamanhos</h2>
+            <div class="categoryPage__leftColumn__sizes__box">
+              <!-- Aqui será feito o fetch dos tamanhos -->
+            </div>
+          </div>
+          <div class="categoryPage__leftColumn__priceRange">
+            <h2>Faixa de preço</h2>
+            <div class="categoryPage__leftColumn__priceRange__box">
+              <!-- Aqui será feito o fetch dos preços -->
+            </div>
+          </div>
+        </div>
 
-</body>
-<h1>Desafio Cadastra</h1>
+        <div class="categoryPage__rightColumn">
+          <div class="categoryPage__rightColumn__gallery">
+            <!-- Aqui serão dispostos os produtos do fetch -->
+          </div>
+        </div>
+      </section>
+    </main>
 
-<script src="bundle.js"></script>
-
+    <script src="bundle.js"></script>
+  </body>
 </html>
