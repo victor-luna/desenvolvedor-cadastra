@@ -208,15 +208,10 @@ export const categoryPage: CategoryPage = {
 
           categoryPage.renderProducts(filteredProducts);
 
-          console.log(filteredProducts);
-
-          // Exibe os produtos filtrados na página
-
           if (checkboxReal.checked) {
             const orangeBackground = document.createElement("div");
             orangeBackground.classList.add("orange-rectangle");
 
-            // Define o estilo do retângulo laranja centralizado
             const orangeBackgroundStyle = `
                   width: 10px;
                   height: 10px;
@@ -227,10 +222,8 @@ export const categoryPage: CategoryPage = {
                   transform: translate(-50%, -50%);
               `;
 
-            // Aplica o estilo ao retângulo laranja
             orangeBackground.style.cssText = orangeBackgroundStyle;
 
-            // Adiciona o retângulo ao checkboxCustom
             checkboxCustom.appendChild(orangeBackground);
           } else {
             const orangeBackground =
@@ -241,14 +234,12 @@ export const categoryPage: CategoryPage = {
           }
         });
 
-        // Cria o elemento de texto para exibir a cor
         const colorText = document.createElement("span");
         colorText.classList.add(
           "categoryPage__leftColumn__colors__box__label__text"
         );
         colorText.textContent = color;
 
-        // Adiciona os elementos criados ao label e ao colorBox
         label.appendChild(checkboxCustom);
         label.appendChild(checkboxReal);
         label.appendChild(colorText);
@@ -341,14 +332,12 @@ export const categoryPage: CategoryPage = {
           categoryPage.renderProducts(filteredProducts);
         });
 
-        // Cria o elemento de texto para exibir o tamanho
         const sizeText = document.createElement("span");
         sizeText.classList.add(
           "categoryPage__leftColumn__sizes__box__label__text"
         );
         sizeText.textContent = size;
 
-        // Adiciona os elementos criados ao label e ao sizeBox
         label.appendChild(checkboxCustom);
         label.appendChild(checkboxReal);
         label.appendChild(sizeText);
